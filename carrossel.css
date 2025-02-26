@@ -1,0 +1,61 @@
+/* Estilos gerais do carrossel */
+.carrossel-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carrossel-imagens {
+    position: relative;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.imagens {
+    display: flex;
+    width: 100%;
+}
+
+.imagem {
+    flex: 0 0 100%;
+    opacity: 1;
+}
+
+.imagem img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Estilo dos botões de navegação */
+.navegacao {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.navegacao button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.navegacao button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}

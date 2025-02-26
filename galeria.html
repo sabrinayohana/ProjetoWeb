@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Galeria de Arte</title>
+    <link rel="stylesheet" href="carrossel.css">
 </head>
 <body>
     <header>  
         <div class="logo"> </div>
-      
         <div class="nomeSite"> <h1>Exposição Virtual</h1> </div>
-      
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -23,14 +22,41 @@
               </ul>
             </li>
             <li><a href="artistas.html">Artistas</a></li>
-            <li><a href="galeria.html"   class="active">Galeria</a></li>
+            <li><a href="galeria.html" class="active">Galeria</a></li>
             <li><a href="contato.html">Contato</a></li>
           </ul>
         </nav>
-        
-          </header>
-    <main>  </main>
-    <footer>  </footer>
+    </header>
 
+    <main>  
+        <h1>Galeria de Arte</h1>
+        <section class="carrossel-container">
+            <div class="carrossel-imagens">
+                <div class="imagens">
+                    <div class="imagem"><img src="others/1.jpg" alt="Imagem 1"></div>
+                    <div class="imagem"><img src="others/2.jpg" alt="Imagem 2"></div>
+                    <div class="imagem"><img src="others/3.jpg" alt="Imagem 3"></div>
+                    <div class="imagem"><img src="others/4.jpg" alt="Imagem 4"></div>
+                    <div class="imagem"><img src="others/5.jpg" alt="Imagem 5"></div>
+                    <div class="imagem"><img src="others/6.jpg" alt="Imagem 6"></div>
+                    <div class="imagem"><img src="others/7.jpg" alt="Imagem 7"></div>
+                    <div class="imagem"><img src="others/8.jpg" alt="Imagem 8"></div>
+                    <div class="imagem"><img src="others/9.jpg" alt="Imagem 9"></div>
+                    <div class="imagem"><img src="others/10.jpg" alt="Imagem 10"></div>
+                </div>
+
+                <div class="navegacao">
+                    <button class="prev">&#10094;</button>
+                    <button class="next">&#10095;</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>  
+        <p>Exposição Virtual © 2025. Todos os direitos reservados.</p> 
+    </footer>
+
+    <script src="carrossel.js"></script>
 </body>
 </html>
