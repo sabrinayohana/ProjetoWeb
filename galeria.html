@@ -30,27 +30,73 @@
 
     <main>  
         <h1>Galeria de Arte</h1>
-        <section class="carrossel-container">
-            <div class="carrossel-imagens">
-                <div class="imagens">
-                    <div class="imagem"><img src="others/1.jpg" alt="Imagem 1"></div>
-                    <div class="imagem"><img src="others/2.jpg" alt="Imagem 2"></div>
-                    <div class="imagem"><img src="others/3.jpg" alt="Imagem 3"></div>
-                    <div class="imagem"><img src="others/4.jpg" alt="Imagem 4"></div>
-                    <div class="imagem"><img src="others/5.jpg" alt="Imagem 5"></div>
-                    <div class="imagem"><img src="others/6.jpg" alt="Imagem 6"></div>
-                    <div class="imagem"><img src="others/7.jpg" alt="Imagem 7"></div>
-                    <div class="imagem"><img src="others/8.jpg" alt="Imagem 8"></div>
-                    <div class="imagem"><img src="others/9.jpg" alt="Imagem 9"></div>
-                    <div class="imagem"><img src="others/10.jpg" alt="Imagem 10"></div>
-                </div>
 
-                <div class="navegacao">
-                    <button class="prev">&#10094;</button>
-                    <button class="next">&#10095;</button>
+        <!-- Container principal do carrossel -->
+        <div class="container">
+        
+            <!-- Imagens do carrossel -->
+            <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img src="others/1-wide.png" style="width:100%" alt="Imagem 1">
+            </div>
+        
+            <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="others/2-wide.png" style="width:100%" alt="Imagem 2">
+            </div>
+        
+            <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="others/3-wide.png" style="width:100%" alt="Imagem 3">
+            </div>
+        
+            <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="others/4-wide.png" style="width:100%" alt="Imagem 4">
+            </div>
+        
+            <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="others/5-wide.png" style="width:100%" alt="Imagem 5">
+            </div>
+        
+            <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="others/6-wide.png" style="width:100%" alt="Imagem 6">
+            </div>
+        
+            <!-- Botões de navegação -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            <!-- Legenda -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+        
+            <!-- Miniaturas -->
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="others/1.png" style="width:100%" onclick="currentSlide(1)" alt="Imagem 1">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="others/2.png" style="width:100%" onclick="currentSlide(2)" alt="Imagem 2">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="others/3.png" style="width:100%" onclick="currentSlide(3)" alt="Imagem 3">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="others/4.png" style="width:100%" onclick="currentSlide(4)" alt="Imagem 4">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="others/5.png" style="width:100%" onclick="currentSlide(5)" alt="Imagem 5">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="others/6.png" style="width:100%" onclick="currentSlide(6)" alt="Imagem 6">
                 </div>
             </div>
-        </section>
+        </div>
+        
     </main>
 
     <footer>  

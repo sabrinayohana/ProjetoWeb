@@ -1,32 +1,30 @@
-const prevButton = document.querySelector('.prev');
-const nextButton = document.querySelector('.next');
-const imagens = document.querySelector('.imagens');
-const totalImages = document.querySelectorAll('.imagem').length;
+let slideIndex = 1;
+showSlides(slideIndex);
 
-let currentIndex = 0;
-
-function updateCarrossel() {
-    imagens.style.transform = `translateX(-${currentIndex * 100}%)`;
+// Next/previous controls
+function plusSlides(n) {
+    showSlides(slideIndex += n);
 }
 
-function showNextImage() {
-    if (currentIndex < totalImages - 1) {
-        currentIndex++;
-    } else {
-        currentIndex = 0; 
+// Thumbnail image controls
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("demo");
+    let captionText = document.getElementById("caption");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
     }
-    updateCarrossel();
-}
-
-function showPrevImage() {
-    if (currentIndex > 0) {
-        currentIndex--;
-    } else {
-        currentIndex = totalImages - 1; 
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
     }
-    updateCarrossel();
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    captionText.innerHTML = dots[slideIndex - 1].alt;
 }
-nextButton.addEventListener('click', showNextImage);
-prevButton.addEventListener('click', showPrevImage);
-
-updateCarrossel();
