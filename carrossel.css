@@ -97,3 +97,11 @@
     max-width: 550px; /* Evita que o carrossel fique gigante */
     margin: auto; /* Centraliza */
 }
+
+img{
+    width: 100%;
+}
+
+.demo cursor{
+    width: 100%;
+}
