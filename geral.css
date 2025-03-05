@@ -9,14 +9,17 @@ header {
       display: flex;
       justify-content: center;
       align-items: center;
-    
+      padding-top: 1%;
 }
-
-
 
 .logo-nome img{
     width: 2%;
     height: 2%;
+}
+
+.logo-nome figcaption{
+    align-self: last baseline;
+    font-size: 1.3rem;
 }
 
 .menu {
@@ -151,4 +154,32 @@ footer {
 .links-sec a:hover{
     background-color: #008c6a;
     color: white;
+}
+
+.artistas h1{
+    justify-self: center;
+
+}
+
+.img-artistas{
+    display: flex;
+    align-items: center;
+}
+
+.legenda-artista{
+    padding-left: 1%;
+    text-align: justify;
+    padding-right: 26%;
+}
+
+.img-artistas img{
+   padding-left: 26%
+}
+
+.forms{
+
+}
+
+.info{
+
 }

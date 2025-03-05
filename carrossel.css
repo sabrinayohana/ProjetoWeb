@@ -1,11 +1,8 @@
-* {
-    box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 
 /* Position the image container (needed to position the left and right arrows) */
 .container {
     position: relative;
+    padding-top:2%;
 }
 
 /* Hide the images by default */
