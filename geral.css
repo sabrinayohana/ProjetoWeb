@@ -46,6 +46,12 @@ header {
     border-radius: 1%;
 }
 
+.menu a.active {
+    color:#008c6a; 
+    font-weight: bold;
+}
+
+
 html, body {
     height: 100%;
     margin: 0;
@@ -132,30 +138,57 @@ footer {
     padding-bottom: 1%;
 }
 
-.links-sec{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2%;
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>PAG SEÇAO<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+.sec-text{
+    justify-self: center;
 }
 
-.links-sec a{
+.sec-main {
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+}
+
+.sec-main figure {
+    text-align: center; 
+}
+
+.sec-main img {
+    width: 70%; 
+    height: auto;
+    border-radius: 10px;
+}
+
+.sec-main figcaption {
+    margin-top: 1%;
+    text-align: center;
+}
+
+.sec-main a {
+    display: inline-block; 
     border: 2px solid #008c6a; 
     background-color: transparent;
     color: #008c6a;
-    padding: 10px 20px;
+    padding: 8px 15px; 
     font-size: 1rem;
-    margin-right: 10px;
     border-radius: 20px;
     text-decoration: none;
     transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+    width: auto; 
+    margin: 10px auto; 
 }
 
-.links-sec a:hover{
+
+.sec-main a:hover {
     background-color: #008c6a;
     color: white;
 }
 
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>PAG ARTISTA<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .artistas h1{
     justify-self: center;
 
@@ -176,10 +209,82 @@ footer {
    padding-left: 26%
 }
 
-.forms{
-
+.botao-voltar{
+  justify-self: end;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
-.info{
+.botao-voltar a{
+    border: 2px solid #008c6a; 
+    background-color: transparent;
+    color: #008c6a;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-right: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
 
+.botao-voltar a:hover{
+    background-color: #008c6a;
+    color: white;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>PAG ESCULTURAS<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.esculturas{
+    justify-items: center;
+}
+
+.img-esculturas{
+  justify-items: center;
+  border: #008c6a 2px solid; 
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.legenda-esculturas{
+   justify-content: center;    
+   text-align: center;
+   padding-left: 35%;
+   padding-right: 35%;
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>PAG FOTOS<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+.photo{
+    justify-items: center;
+}
+
+.fotos-img{
+    justify-items: center;
+    border: #008c6a 2px solid; 
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.fotos-legenda{
+    justify-content: center;    
+    text-align: center;
+    padding-left: 35%;
+    padding-right: 35%;
+    padding-top: 1%;
+
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>PAG PINTURAS<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.paint{
+    justify-self: center;
+}
+
+.pinturas-img{
+    justify-items: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.pinturas-legenda{
+   border-bottom: #008c6a 2px solid;
+   padding-top: 1%;
 }
