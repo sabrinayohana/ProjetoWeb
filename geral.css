@@ -1,0 +1,154 @@
+header {
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.logo-nome{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+}
+
+
+
+.logo-nome img{
+    width: 2%;
+    height: 2%;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 5%;  
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 1% 2%;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background-color: #333;
+    border-radius: 1%;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #222222;
+    color: white;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 1%;
+}
+
+.img-home{
+    width: 30%;
+    height: 30%;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-home {
+    width: 45%;
+    height: auto;
+    border-radius: 8px; 
+    padding-left: 50%;
+}
+
+.intro {
+    max-width: 50%;
+    padding-right: 20%;
+    padding-bottom: 2%;
+}
+
+.intro h1 {
+    font-size: 2rem;
+    color: #fff;
+
+}
+
+.intro p {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.destaques h2{
+    display: flex;
+    justify-content: center;
+}
+
+.destaques .links{
+    display: flex;
+    justify-content: center;
+}
+
+.destaques .links a {
+    border: 2px solid #008c6a; 
+    background-color: transparent;
+    color: #008c6a;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-right: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.destaques .links a:hover {
+    background-color: #008c6a;
+    color: white;
+}
+
+.destaques{
+    padding-bottom: 1%;
+}
+
+.links-sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+.links-sec a{
+    border: 2px solid #008c6a; 
+    background-color: transparent;
+    color: #008c6a;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-right: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.links-sec a:hover{
+    background-color: #008c6a;
+    color: white;
+}
