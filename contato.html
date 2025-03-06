@@ -11,7 +11,7 @@
         
     <div class="logo-nome"> 
         <img src="others/logo.png" alt="logo">
-        <figcaption> Museu Virtual</figcaption>  
+        <span> Museu Virtual</span>  
     </div>
    
     <nav>
@@ -26,43 +26,52 @@
     
 </header>
   
-    <main>   
-        <section class="info">
+<main>   
+    <section class="info-container">
+        <div class="info">
             <h2>Informações de Contato:</h2>
             <p>Nome: Sabrina Yohana da Silva</p>
             <p>E-mail: s.yohana@escolar.ifrn.edu.br</p>
-            <p>Foto: <img src="foto-perfil.jpg" alt="Foto de Perfil"></p>
-        </section>
+        </div>
 
-        <section class="forms">
-            <h2>Formulário de Contato</h2>
-            <form action="#" method="POST">
-                <div>
+        <div class="foto">
+            <img src="others/eu.jpg" alt="Foto de Perfil">
+        </div>
+    </section>
+
+ 
+    <section class="forms">
+        <h2>Formulário de Contato</h2>
+        <form action="#" method="POST">
+            <div class="form-row">
+                <div class="input-box">
                     <label for="nome">Nome:</label>
                     <input type="text" id="nome" name="nome" required>
                 </div>
 
-                <div>
+                <div class="input-box">
                     <label for="email">E-mail:</label>
                     <input type="email" id="email" name="email" required>
                 </div>
 
-                <div>
+                <div class="input-box">
                     <label for="telefone">Telefone:</label>
                     <input type="tel" id="telefone" name="telefone" required>
                 </div>
+            </div>
 
-                <div>
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-                </div>
+            <div class="input-box mensagem-box">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+            </div>
 
-                <div>
-                    <button type="submit">Enviar</button>
-                </div>
-            </form>
-        </section>
-    </main>
+            <div class="btn-box">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </section>
+</main>
+
 
     <footer>
         <p>Exposição Virtual © 2025. Todos os direitos reservados.</p>
